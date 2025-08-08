@@ -4,4 +4,8 @@ title: Contact
 permalink: /contact
 ---
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). 
+Email: [mlhernandez008@gmail.com](mailto:mlhernandez008@gmail.com)
+
+LinkedIn: [linkedin.com/in/mlhernandez08/](https://www.linkedin.com/in/mlhernandez08/)
+
+GitHub: [github.com/mlhernandez08](https://github.com/mlhernandez08)

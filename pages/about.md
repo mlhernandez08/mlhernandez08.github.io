@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about
 ---
 
-Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused publishing platform for your publication site or blog. You can find everything you need to get started under documentation. 
+I'm an aspiring software engineer with a strong foundation in computer science and a focus on game development. I have a Bachelor's degree in Computer Science and recently completed my Master's degree in Software Engineering. 
+
+I am currently sharperning my skills in Unreal Engine by completing small projects and participating in game jams.
