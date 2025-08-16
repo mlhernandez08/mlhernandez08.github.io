@@ -7,6 +7,10 @@ tags: [Kotlin, Android, App]
 image: hangul.png
 ---
 
+**GitHub:** [HangulGo!](https://github.com/mlhernandez08/LanguageLearning)  
+**Platform:** Android  
+**Role:** Developer
+
 ## Overview
 
 HangulGo! is a mobile app designed to help students practice reading and writing Korean.
