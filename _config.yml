@@ -11,8 +11,8 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Marvin Hernandez"
-description:	       "placeholder text"
-author:              "Marvin"
+description:	       "Software & Game Developer"
+author:              "Marvin Hernandez"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
