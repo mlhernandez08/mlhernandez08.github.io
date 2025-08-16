@@ -7,13 +7,16 @@ tags: [projects]
 image: cuba-2.jpg
 ---
   
-# CSUDH Hosted Game Jam Project
+## CSUDH Hosted Game Jam Project
+
 **Theme:** Expect the Unexpected
 
-# Overview
+## Overview
+
 Created for a game jam centered around the theme "Expect the Unexpected," Nightmare Breakout is a rogue-lite game where the player explores a dream world where each zone is randomly chosen.
 
-# Gameplay  
+## Gameplay  
+
 Player navigates through different environmental themes where the final boss stage is a mix of the themes they previously encountered.
 
 **Engine:**  GameMaker Studio 2  
