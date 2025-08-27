@@ -3,7 +3,7 @@ layout: post
 title: "Nightmare Breakout"
 author: "Marvin Hernandez"
 categories: projects
-tags: [projects]
+tags: [projects, gamemakerStudio2, GML, gamedev]
 image: nightmare.png
 ---
   

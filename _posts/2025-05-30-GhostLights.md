@@ -3,8 +3,8 @@ layout: post
 title: "GhostLights"
 author: "Marvin Hernandez"
 categories: projects
-tags: [projects]
-image: cuba-2.jpg
+tags: [projects, unreal, blueprint, gamedev]
+image: GhostLights.png
 ---
 
 **GitHub:** [GhostLights](https://github.com/mlhernandez08/GhostLights)  
@@ -13,15 +13,19 @@ image: cuba-2.jpg
 
 ## Overview
 
-Under Construction...
+2D multiplayer action beat-em-up.  
 
 ---
 
-## Gameplay  
+## Gameplay
 
-Under Construction...
+Players choose from different characters and use both melee attacks and color-based light powers to defeat enemies.  
+The game combines fast-paced combat with cooperative multiplayer gameplay.
 
 ---
 
-**Engine:**  Unreal Engine 5.4  
-**Language:**  Blueprints
+## Tech Stack
+
+**Engine:**  Unreal Engine 5.3  
+**Language:**  Blueprints  
+**Tools:**  PaperZD, Diversion, Steam Online Subsystem API
