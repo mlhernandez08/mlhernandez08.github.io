@@ -7,7 +7,7 @@ tags: [projects, unreal, blueprint, gamedev]
 image: BaseMaterial.png
 ---
 
-**GitHub:** [Unreal Base Material](https://github.com/mlhernandez08/UEBaseMaterial)
+**GitHub:** [Unreal Base Material](https://github.com/mlhernandez08/UEBaseMaterial)  
 **Role:** Developer  
 
 ## Overview
