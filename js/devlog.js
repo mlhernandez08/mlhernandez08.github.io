@@ -43,7 +43,7 @@ const DEVLOG = [
        ──────────────────────────────────────────────────────────── */
     body: [
       "I've been wanting to update my portfolio site for a while now and figured it would be a good place to experiment with using AI as part of my workflow. Instead of just using another template, I approached this as a small project where I could explore how AI tools fit into my process",
-      "Since I don’t have much experience with web development, working with HTML, CSS, and JavaScript took some time to get used to. It took some time to understand the template that Claude generated and how the diffeerent parts of the site was connected.",
+      "Since I don’t have much experience with web development, working with HTML, CSS, and JavaScript took some time to get used to. It took some time to understand the template that Claude generated and how the different parts of the site was connected.",
       "Using free AI tools was helpful in some ways and frustrating in others. Token limitations were always there so I experimented with locally hosted tools using Ollama and Roo Code.",
       "While I am generally happy with the results of what was made, I do see myself changing a lot once I learn more about web development"
     ],
