@@ -1,7 +1,16 @@
-_site
-Gemfile.lock
-.sass-cache
-.jekyll-metadata
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Common editors
+.vscode/
+*.suo
+*.user
+
+# macOS (in case you ever collaborate with Mac users)
 .DS_Store
-.jekyll-cache
-*.gem
+
+# Node (in case you ever add any tooling later)
+node_modules/

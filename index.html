@@ -1,4 +1,361 @@
----
-layout: home
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+    EDIT: Page title shown in the browser tab and search results
+    ============================================================ -->
+  <title>Marvin Hernandez — Game Developer</title>
+  <meta name="description" content="Portfolio of Marvin Hernandez — Game Developer.">
+
+  <!-- Open Graph preview when sharing the link -->
+  <!-- EDIT: Fill these in once you have a preview image ready -->
+  <meta property="og:title"       content="Marvin Hernandez — Portfolio">
+  <meta property="og:description" content="Game Developer">
+  <!--<meta property="og:image"       content="assets/img/profile/og-preview.jpg"> -->
+  <meta property="og:url"         content="https://github.com/mlhernandez08">
+
+  <!-- Favicon: drop a favicon.ico into assets/ and uncomment below -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================================================================
+   NAVIGATION
+   Stacked, fixed top-right, always visible.
+   EDIT: If you rename a section id below, update the matching href here.
+   ================================================================ -->
+<nav id="site-nav" aria-label="Site navigation">
+  <a href="#hero"    class="is-active"><span class="nav-text">Home</span>    <span class="nav-gem" aria-hidden="true"></span></a>
+  <a href="#projects">                 <span class="nav-text">Projects</span> <span class="nav-gem" aria-hidden="true"></span></a>
+  <a href="#devlog">                   <span class="nav-text">Dev Log</span>  <span class="nav-gem" aria-hidden="true"></span></a>
+  <a href="#about">                    <span class="nav-text">About</span>    <span class="nav-gem" aria-hidden="true"></span></a>
+  <a href="#contact">                  <span class="nav-text">Contact</span>  <span class="nav-gem" aria-hidden="true"></span></a>
+</nav>
+
+
+<!-- ================================================================
+   MODAL OVERLAY
+   Shared by project cards and devlog cards.
+   Structure is fixed — content is injected dynamically by main.js.
+   ================================================================ -->
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-box">
+    <div id="modal-header">
+      <div id="modal-eyebrow"></div>
+      <h2 id="modal-title"></h2>
+      <div id="modal-meta"></div>
+      <button id="modal-close" aria-label="Close">✕ Close</button>
+    </div>
+    <div id="modal-body"><!-- Populated by main.js --></div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+   HERO
+   ================================================================ -->
+<section id="hero">
+  <!-- <div class="hero-slash"    aria-hidden="true"></div> -->
+  <div class="hero-bg-glyph" aria-hidden="true"><!--M H--></div>
+  <!-- EDIT: Change "I" above to any single character — it's the large
+             faint glyph behind your name (purely decorative).         -->
+
+  <div class="hero-content">
+
+    <!-- EDIT: Your professional headline.
+         Suggestions:
+           "Game Developer & Technical Artist"
+           "Unreal Engine Developer · Tech Art"
+           "Technical Artist | VFX & Shaders"
+           "Game Dev · Procedural Systems"        -->
+    <div class="hero-eyebrow">Game Developer <!--&amp; Technical Artist--></div>
+
+    <!-- EDIT: Your name.
+         The first span is solid colour; the second renders as an outline.
+         Split however looks best — first/last name is typical.          -->
+    <h1 class="hero-name">
+      <span class="name-first">Marvin</span>
+      <span class="name-last">Hernandez</span>
+    </h1>
+
+    <!-- EDIT: Short label between the two rule bars. -->
+    <div class="hero-rule">
+      <div class="rule-bar"   aria-hidden="true"></div>
+      <div class="rule-label">Portfolio</div>
+      <div class="rule-bar"   aria-hidden="true"></div>
+    </div>
+
+    <!-- EDIT: 2–3 sentence introduction.
+         What do you specialise in? What are you looking for?
+         Example:
+           "Specializing in real-time rendering, shader systems, and procedural
+            tools — the technical craft that bridges art and engineering in games.
+            Open to full-time roles and freelance collaborations."               -->
+    <p class="hero-sub">
+      Software Engineer specializing in gameplay programming and technical art tools in Unreal Engine 5 using C++ and Blueprints.
+      Open to entry-level or junior roles.
+    </p>
+
+    <!-- EDIT: Add or remove chips to match your actual skills and tools.
+         These are visual-only labels on the hero — not linked to filtering.
+         Add: <span class="hero-chip">Substance Painter</span>
+         Remove any you don't use.                                           -->
+    <div class="hero-chips">
+      <span class="hero-chip">Unreal Engine 5</span>
+      <span class="hero-chip">HLSL</span>
+      <span class="hero-chip">Python</span>
+      <span class="hero-chip">C++</span>
+      <span class="hero-chip">Blueprints</span>
+    </div>
+
+    <!-- EDIT: Path to your resume PDF.
+         Put the file in assets/ and update the href.
+         Example: href="assets/YourName_Resume_2025.pdf"                     -->
+    <a href="assets/MarvinHernandezResume.pdf" class="btn-primary" download>
+      ↓ &nbsp; Download Resume
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+   PROJECTS
+   Cards are generated from the PROJECTS array in js/projects.js.
+   To add a project: edit js/projects.js (no HTML edits needed here).
+   ================================================================ -->
+<section id="projects">
+
+  <header class="sec-header fade-in">
+    <span class="sec-num">01</span>
+    <!-- EDIT: "Projects" / "Work" / "Portfolio" — your preference -->
+    <span class="sec-title">Projects</span>
+    <span class="sec-hint">scroll to explore &nbsp;→</span>
+  </header>
+
+  <!-- EDIT: Add / remove filter buttons to match the tags you use in projects.js.
+       "all" must always be present.
+       The data-filter value must exactly match a tag string in projects.js.
+       Current tags: game-dev  tech-art  app-dev  tools
+
+       To add a new filter (e.g. VFX):
+         1. Add  <button class="filter-btn" data-filter="vfx">VFX</button>  here
+         2. Add  "vfx"  to the tags array of the relevant project in projects.js  -->
+  <div class="filter-row fade-in">
+    <button class="filter-btn is-active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="game">Game</button>
+    <button class="filter-btn" data-filter="tech-art">Tech Art</button>
+    <button class="filter-btn" data-filter="app">App</button>
+    <button class="filter-btn" data-filter="tools">Tools</button>
+    <button class="filter-btn" data-filter="prototype">Prototype</button>
+    <button class="filter-btn" data-filter="jam">Jam</button>
+  </div>
+
+  <!-- Project cards are injected here by main.js -->
+  <div class="scroll-row" id="projects-row" aria-label="Projects list"></div>
+
+</section>
+
+
+<!-- ================================================================
+   DEV LOG
+   Cards are generated from the DEVLOG array in js/devlog.js.
+   To add an entry: edit js/devlog.js (no HTML edits needed here).
+   ================================================================ -->
+<section id="devlog">
+
+  <header class="sec-header fade-in">
+    <span class="sec-num">02</span>
+    <!-- EDIT: "Dev Log" / "Blog" / "Notes" / "Journal" -->
+    <span class="sec-title">Dev Log</span>
+    <span class="sec-hint">scroll to explore &nbsp;→</span>
+  </header>
+
+  <!-- Devlog cards are injected here by main.js -->
+  <div class="scroll-row" id="devlog-row" aria-label="Dev log entries"></div>
+
+</section>
+
+
+<!-- ================================================================
+   ABOUT
+   ================================================================ -->
+<section id="about">
+
+  <header class="sec-header fade-in">
+    <span class="sec-num">03</span>
+    <!-- EDIT: "About" / "About Me" / "Bio" -->
+    <span class="sec-title">About</span>
+  </header>
+
+  <div class="about-layout">
+
+    <!-- LEFT COLUMN: bio text, quote, resume button, info grid -->
+    <div class="fade-in">
+
+      <!-- EDIT: 1–2 paragraphs in first person.
+           Suggestions for what to include:
+           - How you got into game dev / tech art
+           - What you focus on and why you love it
+           - The kinds of problems you enjoy solving
+           - What you're currently working on or learning         -->
+      <p class="about-bio">
+        I am an aspiring game developer with a background in computer science and a focus on gameplay programming and technical art tools. I enjoy building and prototyping gameplay combat system.
+      <p class="about-bio" style="color:var(--text-dim);">
+        Currently, I am developing my technical art skills in Unreal Engine using HLSL, exploring how shaders and materials can enhance gampelay clarity and visual feedback.
+      </p>
+
+      <!-- EDIT: A personal quote or guiding principle.
+           DELETE this entire <div> if it doesn't feel right for you.
+           Suggestions:
+           "The best technical art is invisible — you feel the magic, never the math."
+           "I build the tools that let artists dream bigger."
+           "Good pipelines free artists to make better art."                  -->
+      <!--<div class="lore-box">
+        "An optional quote or principle that reflects how you approach your craft. Delete this block entirely if it doesn't suit you."
+      </div> -->
+
+      <!-- EDIT: Same resume path as #hero -->
+      <a href="assets/MarvinHernandezResume.pdf" class="btn-primary" style="margin-top:1.75rem; display:inline-flex;" download>
+        ↓ &nbsp; Resume PDF
+      </a>
+
+      <!-- EDIT: Quick-facts grid — update each cell value -->
+      <div class="about-info-grid" style="margin-top:1.75rem;">
+        <div class="about-info-cell">
+          <div class="cell-label">Location</div>
+          <!-- EDIT: e.g. "Los Angeles, CA" -->
+          <div class="cell-val">Los Angeles, CA</div>
+        </div>
+        <div class="about-info-cell">
+          <div class="cell-label">Availability</div>
+          <!-- EDIT: "Open to Work" / "Employed" / "Freelance" / "Not Available" -->
+          <div class="cell-val">Open to Work</div>
+        </div>
+        <div class="about-info-cell">
+          <div class="cell-label">Primary Engine</div>
+          <!-- EDIT: e.g. "Unreal Engine 5" / "Unity" / "Godot" -->
+          <div class="cell-val">Unreal Engine 5</div>
+        </div>
+        <div class="about-info-cell">
+          <div class="cell-label">Focus</div>
+          <!-- EDIT: e.g. "Tech Art" / "VFX" / "Systems Dev" / "Gameplay" -->
+          <div class="cell-val">Gameplay/Tech Art</div>
+        </div>
+      </div>
+
+    </div><!-- /left column -->
+
+    <!-- RIGHT COLUMN: skill bars -->
+    <div class="fade-in">
+      <div class="skills-label">Skills &amp; Tools</div>
+
+      <!-- EDIT: Update skill names and percentages.
+           Be honest — recruiters notice mismatches with your actual work.
+           To add a new skill: copy one .skill-row block and paste it.
+           To remove a skill: delete the entire .skill-row block.           -->
+
+      <div class="skill-row">
+        <div class="skill-head"><span>Unreal Engine 5</span><span class="skill-pct">65</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-head"><span>C++</span><span class="skill-pct">60</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-head"><span>Python</span><span class="skill-pct">50</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-head"><span>HLSL</span><span class="skill-pct">30</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:30%"></div></div>
+      </div>
+
+      <!-- Copy a .skill-row block above to add more skills -->
+
+    </div><!-- /right column -->
+
+  </div><!-- /.about-layout -->
+
+</section>
+
+
+<!-- ================================================================
+   CONTACT
+   ================================================================ -->
+<section id="contact">
+
+  <header class="sec-header fade-in">
+    <span class="sec-num">04</span>
+    <!-- EDIT: "Contact" / "Get in Touch" / "Reach Out" -->
+    <span class="sec-title">Contact</span>
+  </header>
+
+  <div class="contact-grid fade-in">
+
+    <!-- EDIT: Your email -->
+    <div class="contact-card">
+      <div class="contact-card-label">Email</div>
+      <div class="contact-card-val">
+        <a href="mailto:mlhernandez008@gmail.com">mlhernandez008@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- EDIT: Your LinkedIn handle and URL -->
+    <div class="contact-card">
+      <div class="contact-card-label">LinkedIn</div>
+      <div class="contact-card-val">
+        <a href="https://www.linkedin.com/in/mlhernandez08/" target="_blank" rel="noopener">mlhernandez08</a>
+      </div>
+    </div>
+
+    <!-- EDIT: Your GitHub username and URL -->
+    <div class="contact-card">
+      <div class="contact-card-label">GitHub</div>
+      <div class="contact-card-val">
+        <a href="www.github.com/mlhernandez08" target="_blank" rel="noopener">github.com/mlhernandez08</a>
+      </div>
+    </div>
+
+    <!-- OPTIONAL EXTRA CARDS: Uncomment to add ArtStation, Itch.io, Twitter, etc.
+         If you add a 4th card, change the grid in style.css from
+         repeat(3, 1fr) to repeat(2, 1fr) for better layout.
+    <div class="contact-card">
+      <div class="contact-card-label">ArtStation</div>
+      <div class="contact-card-val">
+        <a href="https://artstation.com/yourprofile" target="_blank" rel="noopener">artstation.com/you</a>
+      </div>
+    </div>
+    -->
+
+  </div>
+
+  <footer class="site-footer fade-in">
+    <div class="footer-gem" aria-hidden="true"></div>
+    <!-- EDIT: Your name and tagline in the footer -->
+    <p class="footer-text">
+      © 2026 Marvin Hernandez &nbsp;·&nbsp; Game Developer <!-- &amp; Technical Artist -->
+    </p>
+  </footer>
+
+</section>
+
+
+<!-- ================================================================
+   SCRIPTS
+   Load order matters: data files before main.js
+   ================================================================ -->
+<script src="js/projects.js"></script>
+<script src="js/devlog.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
