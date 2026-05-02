@@ -22,6 +22,23 @@
 
 const PROJECTS = [
 
+     {
+    thumb:         "assets/img/projects/simpleMask.gif",
+    thumbAlt:      "HLSL Material",
+    eyebrow:       "Unreal Engine 5 · Tech Art · HLSL",
+    title:         "Unreal HLSL Materials",
+    summary:       "This repository contains a collection of HLSL-based material experiments and tech art studies created in Unreal Engine 5. The goal is to explore real-time shader techniques, material authoring, and procedural effects.",
+    tags:          ["tech-art", "tools"],
+    modalEyebrow:  "Tech Art · 2026",
+    modalMeta:     "nreal Engine 5 · Ongoing... · Technical Art",
+    body:          ["This repository contains a collection of HLSL-based material experiments and tech art studies created in Unreal Engine 5.",
+                  "The goal is to explore real-time shader techniques, material authoring, and procedural effects using Unreal’s Custom HLSL nodes."],
+    techHeader:    "Latest Material Study",
+    techPoints:    ["This study focuses on a simple animated masking effect driven by UV manipulation and time-based animation.",],
+    images:        [{ src: "assets/img/projects/simpleMask.gif", alt: "Animated Mask Material", full: false },],
+    links:         [{ label: "View on GitHub →",  href: "https://github.com/mlhernandez08/Unreal-HLSL-Materials", type: "github" }],
+  },
+
   /* ── EXAMPLE PROJECT (keep this as a reference, then fill it in) ── */
   {
     /* Shown in the card thumbnail area.
@@ -135,7 +152,7 @@ const PROJECTS = [
     modalEyebrow: "Game Dev · 2025",
 
     /* Small metadata line under the title */
-    modalMeta: "Unreal Engine 5 · 1 week · Technical Art",
+    modalMeta: "Unreal Engine 5 · Ongoing... · Technical Art",
 
     /* Full writeup — each string in the array becomes a <p> tag.
        Suggestions:
