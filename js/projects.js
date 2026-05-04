@@ -35,7 +35,7 @@ const PROJECTS = [
                   "The goal is to explore real-time shader techniques, material authoring, and procedural effects using Unreal’s Custom HLSL nodes."],
     techHeader:    "Latest Material Study",
     techPoints:    ["This study explores generating simple tileable procedural shapes using UV manipulation and mathematical functions in HLSL.",],
-    images:        [{ src: "assets/img/projects/simpleMask.gif", alt: "Animated Mask Material", full: false },],
+    images:        [{ src: "assets/img/projects/gears.png", alt: "HLSL Material", full: false },],
     links:         [{ label: "View on GitHub →",  href: "https://github.com/mlhernandez08/Unreal-HLSL-Materials", type: "github" }],
   },
 
